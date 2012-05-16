@@ -6,6 +6,7 @@
  */
 var JSutil = {};
 JSutil.String = {
+    // private members
     empty: '',
     PAD: {
         RIGHT: 0,
@@ -13,6 +14,7 @@ JSutil.String = {
         BOTH: 2
     },
 
+    // public members
     numberFormat: function (number, decimals, dec_point, thousands_sep) {
         var n = number, c = isNaN(decimals = Math.abs(decimals)) ? 2 : decimals;
         var d = dec_point == undefined ? "." : dec_point;
